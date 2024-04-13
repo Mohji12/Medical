@@ -49,7 +49,7 @@ region = st.selectbox('southwest:1, southeast:2, northwest:3, northeast:4',optio
 
 x = pipe.predict([[Ages,sex,bmi,children,smoker,region]])
 
-price = """<h2 style = 'color:#c99f09'> Medical Cost for the patient is
+price = """<h2 style = 'color:#c99f09'> Medical Cost for the patient 
 </h2>"""
 st.markdown(price,unsafe_allow_html=True)
 price1 = np.round(x,2)
